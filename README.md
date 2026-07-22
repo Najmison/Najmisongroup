@@ -1,0 +1,1 @@
+Upload these files to your GitHub repository. Replace YOUR_WEB3FORMS_KEY with your free Web3Forms access key.
