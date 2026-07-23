@@ -65,9 +65,9 @@ header{
 }
 
 .logo img{
-
-    height:105px;
-
+    height:190px;
+    width:auto;
+    display:block;
 }
 
 nav{
