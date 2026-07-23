@@ -147,3 +147,25 @@ width:240px;
     color:#555;
     margin-bottom:22px;
 }
+/* ===== Why Choose Us ===== */
+
+.why{
+    background:white;
+    text-align:center;
+}
+
+.why h2{
+    font-size:2.4rem;
+    color:#081b3a;
+    margin-bottom:50px;
+}
+
+.why .card{
+    transition:.3s;
+    border-top:4px solid #d4af37;
+}
+
+.why .card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 20px 45px rgba(0,0,0,.12);
+}
