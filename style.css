@@ -1,10 +1,10 @@
-/* ==========================================
+/* =====================================================
    NAJMISON GROUP
-   STYLE.CSS
-   PART 1 - GENERAL / HEADER / HERO
-========================================== */
+   PROFESSIONAL STYLESHEET
+   PART 1
+===================================================== */
 
-/* Reset */
+/* RESET */
 
 *{
     margin:0;
@@ -17,58 +17,64 @@ html{
 }
 
 body{
-    font-family:'Inter',Arial,sans-serif;
-    background:#f8f9fb;
-    color:#1f2937;
-    line-height:1.7;
+
+    font-family:'Inter',sans-serif;
+    background:#f7f8fb;
+    color:#273447;
+    line-height:1.8;
+
 }
 
-/* Headings */
+img{
 
-h1,h2,h3{
-    font-family:'Cormorant Garamond',serif;
+    max-width:100%;
+    display:block;
+
 }
-
-/* Links */
 
 a{
+
     text-decoration:none;
+
 }
 
-/* ==========================
+/* =====================================================
    HEADER
-========================== */
+===================================================== */
 
 header{
 
     position:sticky;
+
     top:0;
 
+    z-index:999;
+
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     padding:18px 8%;
 
     background:#081b3a;
 
-    z-index:1000;
-
-    box-shadow:0 4px 15px rgba(0,0,0,.15);
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
 
 }
 
 .logo img{
 
-    height:110px;
-    display:block;
+    height:105px;
 
 }
 
 nav{
 
     display:flex;
-    gap:32px;
+
+    gap:40px;
 
 }
 
@@ -88,38 +94,49 @@ nav a:hover{
 
 }
 
-/* ==========================
+/* =====================================================
    HERO
-========================== */
+===================================================== */
 
 .hero{
-
-    min-height:90vh;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
 
     position:relative;
 
     overflow:hidden;
 
-    padding:80px 10%;
+    min-height:90vh;
 
-    background:
-    linear-gradient(
-    135deg,
-    #081b3a 0%,
-    #0f2d5c 60%,
-    #123a73 100%);
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-align:center;
+
+    padding:80px 8%;
 
     color:white;
 
+    background:
+
+    linear-gradient(
+
+    rgba(8,27,58,.82),
+
+    rgba(8,27,58,.82)
+
+    ),
+
+    url("https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1800&q=80");
+
+    background-size:cover;
+
+    background-position:center;
+
 }
 
-.hero::before{
+.hero::after{
 
     content:"";
 
@@ -128,8 +145,11 @@ nav a:hover{
     inset:0;
 
     background:
+
     radial-gradient(circle at top right,
+
     rgba(212,175,55,.15),
+
     transparent 40%);
 
 }
@@ -148,9 +168,9 @@ nav a:hover{
 
     color:#d4af37;
 
-    letter-spacing:4px;
+    font-size:.95rem;
 
-    font-size:.9rem;
+    letter-spacing:4px;
 
     font-weight:700;
 
@@ -159,6 +179,8 @@ nav a:hover{
 }
 
 .hero h1{
+
+    font-family:'Cormorant Garamond',serif;
 
     font-size:4.5rem;
 
@@ -170,19 +192,19 @@ nav a:hover{
 
 .hero-text{
 
-    max-width:700px;
-
-    margin:0 auto 45px;
-
     font-size:1.25rem;
 
-    color:#f3f5f8;
+    max-width:720px;
+
+    margin:auto auto 45px;
+
+    color:#f4f4f4;
 
 }
 
-/* ==========================
+/* =====================================================
    BUTTONS
-========================== */
+===================================================== */
 
 .hero-buttons{
 
@@ -210,7 +232,7 @@ nav a:hover{
 
     font-weight:700;
 
-    transition:.3s;
+    transition:.35s;
 
 }
 
@@ -218,7 +240,7 @@ nav a:hover{
 
     transform:translateY(-5px);
 
-    background:#e7c861;
+    background:#ebca66;
 
 }
 
@@ -239,382 +261,392 @@ nav a:hover{
     color:#081b3a;
 
 }
-/* ==========================================
-   NAJMISON GROUP
-   STYLE.CSS
-   PART 1 - GENERAL / HEADER / HERO
-========================================== */
 
-/* Reset */
+/* =====================================================
+   GENERAL SECTIONS
+===================================================== */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+.section{
+
+    padding:110px 8%;
+
 }
 
-html{
-    scroll-behavior:smooth;
+.grey{
+
+    background:#f2f5f9;
+
 }
 
-body{
-    font-family:'Inter',Arial,sans-serif;
-    background:#f8f9fb;
-    color:#1f2937;
-    line-height:1.7;
-}
+.section h2{
 
-/* Headings */
+    text-align:center;
 
-h1,h2,h3{
     font-family:'Cormorant Garamond',serif;
+
+    font-size:3.2rem;
+
+    color:#081b3a;
+
+    margin-bottom:25px;
+
 }
 
-/* Links */
+.section h2::after{
 
-a{
-    text-decoration:none;
+    content:"";
+
+    display:block;
+
+    width:90px;
+
+    height:5px;
+
+    background:#d4af37;
+
+    margin:18px auto 0;
+
+    border-radius:30px;
+
 }
 
-/* ==========================
-   HEADER
-========================== */
+.section p{
 
-header{
+    max-width:900px;
 
-    position:sticky;
-    top:0;
+    margin:28px auto;
+
+    text-align:center;
+
+    color:#555;
+
+    font-size:1.15rem;
+
+}
+/* =====================================================
+   ABOUT
+===================================================== */
+
+.about-container{
+    max-width:1100px;
+    margin:auto;
+}
+
+.about-text{
+    max-width:850px;
+    margin:auto;
+}
+
+/* =====================================================
+   CARD GRID
+===================================================== */
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:60px auto 0;
+
+}
+
+.card{
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:38px;
+
+    min-height:230px;
+
+    text-align:center;
 
     display:flex;
-    justify-content:space-between;
-    align-items:center;
 
-    padding:18px 8%;
+    flex-direction:column;
+
+    justify-content:center;
+
+    border-top:5px solid #d4af37;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.35s;
+
+}
+
+.card:hover{
+
+    transform:translateY(-10px);
+
+    box-shadow:0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.card h3{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:1.55rem;
+
+    color:#081b3a;
+
+    margin-bottom:18px;
+
+    font-weight:700;
+
+}
+
+.card p{
+
+    margin:0;
+
+    color:#666;
+
+    font-size:1rem;
+
+    line-height:1.8;
+
+}
+
+/* =====================================================
+   WHY CHOOSE US
+===================================================== */
+
+.why{
+
+    background:white;
+
+}
+
+/* =====================================================
+   SERVICES
+===================================================== */
+
+#services .cards{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+#services .card{
+
+    min-height:250px;
+
+}
+
+/* =====================================================
+   CONTACT
+===================================================== */
+
+#contact{
+
+    text-align:center;
+
+}
+
+.email{
+
+    display:inline-block;
+
+    margin-top:30px;
+
+    padding:18px 36px;
 
     background:#081b3a;
 
-    z-index:1000;
-
-    box-shadow:0 4px 15px rgba(0,0,0,.15);
-
-}
-
-.logo img{
-
-    height:110px;
-    display:block;
-
-}
-
-nav{
-
-    display:flex;
-    gap:32px;
-
-}
-
-nav a{
-
     color:white;
 
-    font-weight:600;
+    border-radius:40px;
+
+    font-weight:700;
 
     transition:.3s;
 
 }
 
-nav a:hover{
-
-    color:#d4af37;
-
-}
-
-/* ==========================
-   HERO
-========================== */
-
-.hero{
-
-    min-height:90vh;
-
-    display:flex;
-    align-items:center;
-    justify-content:center;
-
-    text-align:center;
-
-    position:relative;
-
-    overflow:hidden;
-
-    padding:80px 10%;
-
-    background:
-    linear-gradient(
-    135deg,
-    #081b3a 0%,
-    #0f2d5c 60%,
-    #123a73 100%);
-
-    color:white;
-
-}
-
-.hero::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-    radial-gradient(circle at top right,
-    rgba(212,175,55,.15),
-    transparent 40%);
-
-}
-
-.hero-content{
-
-    position:relative;
-
-    z-index:2;
-
-    max-width:850px;
-
-}
-
-.hero-tagline{
-
-    color:#d4af37;
-
-    letter-spacing:4px;
-
-    font-size:.9rem;
-
-    font-weight:700;
-
-    margin-bottom:20px;
-
-}
-
-.hero h1{
-
-    font-size:4.5rem;
-
-    line-height:1.1;
-
-    margin-bottom:30px;
-
-}
-
-.hero-text{
-
-    max-width:700px;
-
-    margin:0 auto 45px;
-
-    font-size:1.25rem;
-
-    color:#f3f5f8;
-
-}
-
-/* ==========================
-   BUTTONS
-========================== */
-
-.hero-buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    gap:20px;
-
-    flex-wrap:wrap;
-
-}
-
-.button{
-
-    display:inline-block;
-
-    padding:16px 38px;
-
-    border-radius:40px;
+.email:hover{
 
     background:#d4af37;
 
     color:#081b3a;
 
-    font-weight:700;
-
-    transition:.3s;
-
 }
 
-.button:hover{
-
-    transform:translateY(-5px);
-
-    background:#e7c861;
-
-}
-
-.button.secondary{
-
-    background:transparent;
-
-    color:white;
-
-    border:2px solid white;
-
-}
-
-.button.secondary:hover{
-
-    background:white;
-
-    color:#081b3a;
-
-}
-/* ==========================================
-   PART 3 - FOOTER / RESPONSIVE / POLISH
-========================================== */
-
-/* ==========================
+/* =====================================================
    FOOTER
-========================== */
+===================================================== */
 
 footer{
+
     background:#081b3a;
+
     color:white;
+
     text-align:center;
+
     padding:50px 8%;
+
 }
 
 footer p{
+
     margin:0;
+
     color:#d9d9d9;
+
     font-size:.95rem;
-    letter-spacing:.5px;
+
 }
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
 
-/* ==========================
-   SMOOTH TRANSITIONS
-========================== */
-
-img{
-    max-width:100%;
-    height:auto;
-}
-
-section{
-    scroll-margin-top:120px;
-}
-
-/* ==========================
-   TABLET
-========================== */
-
-@media (max-width:992px){
-
-    .hero h1{
-        font-size:3.5rem;
-    }
+@media (max-width:1000px){
 
     .cards{
         grid-template-columns:repeat(2,1fr);
     }
 
-    .logo img{
-        height:90px;
+    #services .cards{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .hero h1{
+        font-size:3.5rem;
     }
 
 }
-
-/* ==========================
-   MOBILE
-========================== */
 
 @media (max-width:768px){
 
     header{
+
         flex-direction:column;
+
         gap:20px;
+
         padding:20px;
+
     }
 
     nav{
+
+        gap:25px;
+
         flex-wrap:wrap;
+
         justify-content:center;
-        gap:18px;
+
     }
 
     .hero{
-        min-height:75vh;
+
+        min-height:80vh;
+
         padding:70px 8%;
+
     }
 
     .hero h1{
-        font-size:2.6rem;
+
+        font-size:2.8rem;
+
     }
 
     .hero-text{
-        font-size:1.05rem;
+
+        font-size:1.1rem;
+
     }
 
     .hero-buttons{
+
         flex-direction:column;
+
         align-items:center;
+
     }
 
     .button{
+
         width:240px;
+
         text-align:center;
-    }
 
-    .section{
-        padding:80px 8%;
-    }
-
-    .section h2{
-        font-size:2.4rem;
     }
 
     .cards{
+
         grid-template-columns:1fr;
+
     }
 
-    .card{
-        min-height:auto;
+    #services .cards{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .section{
+
+        padding:80px 8%;
+
+    }
+
+    .section h2{
+
+        font-size:2.5rem;
+
     }
 
 }
 
-/* ==========================
-   SMALL PHONES
-========================== */
-
 @media (max-width:480px){
 
     .hero h1{
+
         font-size:2.2rem;
+
     }
 
     .hero-tagline{
-        letter-spacing:2px;
+
         font-size:.8rem;
+
+        letter-spacing:2px;
+
     }
 
-    .section h2{
-        font-size:2rem;
-    }
+}
 
-    nav a{
-        font-size:.95rem;
-    }
+/* =====================================================
+   SMOOTH ANIMATIONS
+===================================================== */
+
+.card,
+.button,
+.email,
+nav a{
+
+    transition:all .3s ease;
+
+}
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+}
+
+html{
+
+    scroll-behavior:smooth;
 
 }
